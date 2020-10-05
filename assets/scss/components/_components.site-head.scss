@@ -1,0 +1,35 @@
+
+.site-head {
+  background-color: rgba(28,29,30,100);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 9995;
+  padding: {
+    left: 2vw;
+    right: 2vw;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    justify-content: center;
+    align-self: center;
+  }
+
+  &__user-nav {
+    align-self: center;
+  }
+
+  img {
+    max-height: 35px;
+  }
+}
