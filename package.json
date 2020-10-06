@@ -15,8 +15,10 @@
     "@vivid-web/flexboxgrid-vue": "^1.0.5",
     "bootstrap-vue": "^2.17.3",
     "cross-env": "^5.2.0",
+    "jquery": "^3.5.1",
     "moment": "^2.29.0",
     "nuxt": "^2.0.0",
+    "vue-typed-js": "^0.1.2",
     "vue2-daterange-picker": "^0.5.1"
   },
   "devDependencies": {

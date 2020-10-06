@@ -9,7 +9,7 @@
       <NavItems :items="items" />
     </div>
     <div class="site-head__user-nav">
-      <b-button pill size="lg" variant="primary">Logout</b-button>
+      <button class="btn  btn--primary">LET'S TALK</button>
     </div>
   </header>
 </template>
@@ -20,10 +20,10 @@ import NavItems from '@/components/Header/NavItems.vue';
     data() {
       return {
         items: [
-          { name: 'Dashboard', href: '/' },
-          { name: 'Courses', href: '/courses' },
-          { name: 'Users', href: '/users' },
-          { name: 'Reports', href: '/reports' }
+          { name: 'WHO WE ARE', href: '/' },
+          { name: 'WHAT WE DO', href: '/' },
+          { name: 'HOW WE HELP', href: '/' },
+          { name: 'CASE STUDIES', href: '/' }
         ]
       }
     },

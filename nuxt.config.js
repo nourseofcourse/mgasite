@@ -1,12 +1,12 @@
 const pkg = require('./package')
-const wepack = require('webpack');
+import webpack from 'webpack'
 
 module.exports = {
 
   /*
   ** Replaces the deprecated mode property for SPA
   */
-  ssr: false,
+  ssr: true,
 
   /*
   ** Headers of the page
@@ -20,7 +20,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
 
@@ -40,7 +39,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/flexboxgrid-vue'
+    '~/plugins/flexboxgrid-vue',
+    '~/plugins/vue-typed-js'
   ],
 
   /*
@@ -63,8 +63,17 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    transpile: [
+      '@vivid-web/flexboxgrid-vue',
+      'vue-typed-js'
+    ],
+    vendor: ['jquery'],
+    extend(config, ctx) {},
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery'
+      })
+    ]
 
-    }
   }
 }

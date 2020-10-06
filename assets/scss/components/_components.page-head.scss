@@ -1,0 +1,71 @@
+.page-head {
+  &__content {
+    min-height: 70vh;
+  }
+
+  &__desc {
+    max-width: 650px;
+    margin-bottom: 35px;
+  }
+
+  &__link  {
+    color: #001B23;
+    font-size: 28px;
+    text-decoration: none;
+    font-family: 'SF Pro Display';
+
+    span {
+      text-decoration: underline;
+    }
+
+    sup {
+      color: #00B7E7;
+      font-weight: 900;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    > span {
+      position: relative;
+    }
+
+    .typing {
+      z-index: 1;
+      position: relative;
+    }
+  }
+  &__underline {
+    position: absolute;
+    display: block;
+    height: .25em;
+    width: 100%;
+    padding-right: .1em;
+    bottom: .13em;
+    left: -.05em;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
+    z-index: 0;
+    -webkit-transform-origin: center left;
+	  transform-origin: center left;
+
+    &--show {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition: -webkit-transform .2s cubic-bezier(.25, .25, .5, 1);
+      transition: -webkit-transform .2s cubic-bezier(.25, .25, .5, 1);
+      transition: transform .2s cubic-bezier(.25, .25, .5, 1);
+      transition: transform .2s cubic-bezier(.25, .25, .5, 1), -webkit-transform .2s cubic-bezier(.25, .25, .5, 1);
+    }
+
+    &--hide {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform 0s ease-out;
+      transition: -webkit-transform 0s ease-out;
+      transition: transform 0s ease-out;
+      transition: transform 0s ease-out, -webkit-transform 0s ease-out;
+    }
+  }
+}

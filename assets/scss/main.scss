@@ -1,4 +1,5 @@
 // Settings
+@import 'settings/settings.functions';
 @import 'settings/settings.grid';
 
 
@@ -32,19 +33,23 @@
 
 // Components
 @import 'components/components.site-head';
+@import 'components/components.site-foot';
 @import 'components/components.site-nav';
-
-
-
+@import 'components/components.page-head';
+@import 'components/components.button';
+@import 'components/components.headline';
+@import 'components/components.tabs';
+@import 'components/components.foot-nav';
+@import 'components/components.feature-slider';
 
 
 // Tools & mixins
 @import 'tools/all';
-@import 'objects/objects.layout'
+@import 'objects/objects.layout';
 
 
 
 
 
 // Utilities
-//@import 'utilities/all';
+@import 'utilities/all';

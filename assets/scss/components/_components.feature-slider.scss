@@ -1,0 +1,35 @@
+.feature-wrap {
+  position: sticky;
+  top: 25vh;
+  width: 100%;
+  overflow: hidden;
+}
+.feature-slider {
+  &__slides  {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__slide {
+    margin-right: 100px;
+    flex: 0 0 auto;
+    height: 450px;
+    width: 280px;
+    list-style: none;
+    text-align: center;
+    .icn {
+      position: relative;
+      height: 300px;
+      width: 200px;
+      margin: 0 auto;
+
+      img {
+        height: 100%;
+        transition: all 0.25s ease;
+        margin: 0 auto;
+      }
+    }
+  }
+}

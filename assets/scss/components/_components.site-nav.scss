@@ -7,8 +7,10 @@
   &__list-item {
     display: inline-block;
     margin: 0 14px;
+    font-weight: 400;
     > a {
-      color: #fff;
+      color: #2A3749;
+      text-decoration: none;
     }
   }
 }

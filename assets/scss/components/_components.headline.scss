@@ -1,0 +1,15 @@
+.headline {
+
+  &--boxed {
+    padding: 45px 50px;
+    background: #EDFBFF;
+    border-radius: 4px;
+  }
+
+  &__content {
+    &--small {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.site-foot {
+  color: #ffffff;
+  &__cta {
+    position: relative;
+    background-color: #00B7E7;
+    padding: {
+      top: 80px;
+      bottom: 85px;
+    }
+
+    button {
+      margin-top: 24px;
+    }
+  }
+
+  &__overlay {
+    height: 100%;
+    width: 40%;
+    background-image: url(../../static/star-bg.svg);
+    position: absolute;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: right 30%;
+    background-attachment: scroll;
+  }
+
+  &__headline {
+    color: #fff;
+  }
+
+  &__bar {
+    background-color:#00b2e2;
+    padding: {
+      top: 25px;
+      bottom: 25px;
+      left: 2vw;
+      right: 2vw;
+    }
+  }
+
+  &__nav {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    height: 100%;
+  }
+
+  &__social {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  &__social-item {
+    list-style: none;
+    display: inline-block;
+    padding: 0 8px;
+  }
+}
