@@ -19,7 +19,7 @@
       <VGrid variant="container">
         <VRow>
           <VCol :variants="[ 'md-6', 'md-offset-3' ]">
-            <div class="headline  text-center">
+            <div class="headline  text-center  headline--mb">
               <h2 class="headline__title">Services at your Fingertips</h2>
               <p class="headline__content  headline__content--small">Our core business models help you establish your name brand as a trusted source for financial services.</p>
             </div>
