@@ -3,23 +3,64 @@
     <div class="tabs__menu">
       <div
         v-for="tab in tabs"
-        :key="tab"
-        @click="updateTab(tab)"
+        :key="tab.name"
+        @click="updateTab(tab.name)"
         class="tabs__menu-item"
-        :class="{ 'active': ( selected == tab ) }"
-        :aria-selected="selected == tab"
-      >{{ tab }}</div>
+        :class="{ 'active': ( selected == tab.name ) }"
+        :aria-selected="selected == tab.name"
+      >
+        <div class="tabs__icon">
+          <Icon :icon="tab.icon"></Icon>
+        </div>
+        <div class="tabs__title">{{ tab.name }}</div>
+        <div class="tabs__arrow">
+          <Icon :icon="'arrow'"></Icon>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import Icon from '@/components/Icons/Icon.vue';
   export default {
     data() {
       return {
-        tabs: ['Tax Program', 'Seminar Program', 'State Program', 'Federal Program', 'Agents in the News'],
+        tabs: [
+          {
+            name: 'Tax Program',
+            icon: 'tax'
+          },
+          {
+            name: 'Seminar Program',
+            icon: 'seminars'
+          },
+          {
+            name: 'State Program',
+            icon: 'state'
+          },
+          {
+            name: 'Federal Program',
+            icon: 'federal'
+          },
+          {
+            name: 'CPA Program',
+            icon: 'cpa',
+          },
+          {
+            name: 'Agents in the News',
+            icon: 'news'
+          },
+          {
+            name: 'M Creative Agency',
+            icon: 'creative'
+          }
+        ],
       }
+    },
+    components: {
+      Icon
     },
     computed: {
       ...mapState({

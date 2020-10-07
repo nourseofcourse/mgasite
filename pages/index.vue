@@ -15,7 +15,8 @@
         </VRow>
       </VGrid>
     </section>
-    <section class="section">
+    <section class="section" style="overflow: hidden;">
+      <div class="section--bg"></div>
       <VGrid variant="container">
         <VRow>
           <VCol :variants="[ 'md-6', 'md-offset-3' ]">
@@ -26,7 +27,7 @@
           </VCol>
         </VRow>
         <VRow>
-          <VCol :variants="[ 'md-3', 'md-offset-1', 'no-gutters' ]">
+          <VCol :variants="[ 'md-4', 'no-gutters' ]">
             <Tabs />
           </VCol>
           <VCol :variants="[ 'md-6', 'md-offset-1' ]">
@@ -120,7 +121,7 @@
               </AutoWalk>
             </div>
           </VCol>
-          <VCol :variants="[ 'align-center', 'md-3', 'md-offset-1' ]">
+          <VCol :variants="[ 'align-center', 'md-3', 'md-offset-1', 'no-gutters' ]">
             <div class="headline">
               <h2 class="headline__title">Insurance Providers</h2>
             </div>

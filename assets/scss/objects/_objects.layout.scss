@@ -29,9 +29,24 @@ main {
 }
 
 .section {
+  position: relative;
   padding: {
     top: 110px;
     bottom: 110px;
+  }
+
+  &--bg {
+    position: relative;
+      height: 100%;
+      width: 50%;
+      background-image: url(../../static/bg-right.svg);
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: right center;
+      position: absolute;
+      right: -300px;
+      top: 200px;
+      z-index: 1111;
   }
 }
 

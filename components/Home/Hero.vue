@@ -8,7 +8,6 @@
               :strings="words"
               :startDelay="1000"
               :loop="true"
-              :shuffle="true"
               :backDelay="2000"
               :backSpeed="50"
               @onStringTyped="drawUnderline"

@@ -15,13 +15,17 @@
   import StateProgram from '@/components/Tabs/StateProgram.vue';
   import FederalProgram from '@/components/Tabs/FederalProgram.vue';
   import AgentsInTheNews from '@/components/Tabs/AgentsInTheNews.vue';
+  import CpaProgram from '@/components/Tabs/CpaProgram.vue';
+  import MCreativeAgency from '@/components/Tabs/MCreativeAgency.vue';
   export default {
     components: {
       TaxProgram,
       SeminarProgram,
       StateProgram,
       FederalProgram,
-      AgentsInTheNews
+      CpaProgram,
+      AgentsInTheNews,
+      MCreativeAgency
     },
     computed: {
       ...mapState({
@@ -41,5 +45,12 @@
 </script>
 
 <style lang="scss" scoped>
-
+.screen-fade-enter-active,
+.screen-fade-leave-active {
+  transition: opacity 250ms ease;
+}
+.screen-fade-enter,
+.screen-fade-leave-to {
+  opacity: 0;
+}
 </style>
