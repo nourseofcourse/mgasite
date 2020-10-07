@@ -17,6 +17,7 @@
               :backSpeed="50"
               @onStringTyped="drawUnderline"
               @preStringTyped="hideUnderline"
+              @onLastStringBackspaced="hideUnderline"
               >
               <h1 class="page-head__title  headline__title">
                 Providing financial <br>advisors with
