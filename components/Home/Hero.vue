@@ -1,8 +1,10 @@
 <template>
   <header class="page-head page-head--home">
     <picture>
-      <source srcset="hero-image.webp" type="image/webp" alt="">
-      <source srcset="hero-image.png" type="image/jpeg" alt="">
+      <source srcset="hero-image.webp" type="image/webp" alt="" media="(min-width: 1000px)">
+      <source srcset="hero-image.png" type="image/jpeg" alt="" media="(min-width: 1000px)">
+      <source srcset="hero-image-m.webp" type="image/webp" alt="" media="(min-width: 900px)">
+      <source srcset="hero-image-m.png" type="image/jpeg" alt="" media="(min-width: 900px)">
       <img src="hero-image.png" alt="">
     </picture>
     <VGrid variant="container">
