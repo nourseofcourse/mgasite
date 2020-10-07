@@ -117,7 +117,7 @@
                   v-for="(carrier, idx) in carriers"
                   :key="idx"
                   :image="carrier.image"
-                  :imagewebp="carried.imagewebp"
+                  :imagewebp="carrier.imagewebp"
                   :alt="carrier.alt" />
               </AutoWalk>
             </div>
