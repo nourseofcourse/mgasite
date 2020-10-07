@@ -29,6 +29,10 @@ import Icon from '@/components/Icons/Icon.vue';
       return {
         tabs: [
           {
+            name: 'M Creative Agency',
+            icon: 'creative'
+          },
+          {
             name: 'Tax Program',
             icon: 'tax'
           },
@@ -51,10 +55,6 @@ import Icon from '@/components/Icons/Icon.vue';
           {
             name: 'Agents in the News',
             icon: 'news'
-          },
-          {
-            name: 'M Creative Agency',
-            icon: 'creative'
           }
         ],
       }

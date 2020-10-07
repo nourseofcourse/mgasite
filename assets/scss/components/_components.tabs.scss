@@ -86,4 +86,11 @@
       max-width: 450px;
     }
   }
+
+  &__img {
+    margin-left: auto;
+    justify-self: flex-end;
+    display: flex;
+    max-height: 350px;
+  }
 }

@@ -42,11 +42,11 @@ main {
       background-image: url(../../static/bg-right.svg);
       background-repeat: no-repeat;
       background-attachment: scroll;
-      background-position: right center;
+      background-position: 300px center;
       position: absolute;
-      right: -300px;
+      right: 0;
       top: 200px;
-      z-index: 1111;
+      z-index: -1;
   }
 }
 
