@@ -117,6 +117,7 @@
                   v-for="(carrier, idx) in carriers"
                   :key="idx"
                   :image="carrier.image"
+                  :imagewebp="carried.imagewebp"
                   :alt="carrier.alt" />
               </AutoWalk>
             </div>
@@ -154,26 +155,32 @@ export default {
       carriers: [
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         },
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         },
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         },
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         },
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         },
         {
           image: 'fidelity-logo.png',
+          imagewebp: 'fidelity-logo.webp',
           alt: 'Fidelity'
         }
       ]

@@ -2,7 +2,11 @@
   <header class="site-head" ref="js-headroom">
     <div class="site-head__logo">
       <nuxt-link to="/">
-        <img src="/m-logo.png" alt="">
+        <picture>
+          <source srcset="/m-logo.png" type="image/webp" alt="">
+          <source srcset="/m-logo.png" type="image/jpeg" alt="">
+          <img src="/m-logo.png" alt="">
+        </picture>
       </nuxt-link>
     </div>
     <div class="site-head__nav">

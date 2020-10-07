@@ -18,7 +18,11 @@
       <VGrid variant="container">
         <VRow>
           <VCol variant="md-2">
-            <img src="m-logo-white.png" alt="">
+            <picture>
+              <source srcset="/m-logo-white.png" type="image/webp" alt="">
+              <source srcset="/m-logo-white.png" type="image/jpeg" alt="">
+              <img src="/m-logo-white.png" alt="">
+            </picture>
           </VCol>
           <VCol variant="md-8">
             <div class="site-foot__nav">

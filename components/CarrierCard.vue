@@ -1,6 +1,10 @@
 <template>
   <div class="card card--carrier  shadow">
-    <img :src="image" :alt="alt">
+    <picture>
+      <source :srcset="imagewebp" type="image/webp" :alt="alt">
+      <source :srcset="imagewebp" type="image/jpeg" :alt="alt">
+      <img :src="image" :alt="alt">
+    </picture>
   </div>
 </template>
 
@@ -8,6 +12,9 @@
   export default {
     props: {
       image: {
+        type: String
+      },
+      imagewebp: {
         type: String
       },
       alt: {

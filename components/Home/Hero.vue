@@ -26,7 +26,11 @@
           <a href="" class="page-head__link"><span>Let’s start the conversation!</span> <sup>↗</sup></a>
         </VCol>
         <VCol :variants="[ 'align-center', 'md-5' ]">
-          <img src="hero-image.png" alt="">
+          <picture>
+            <source srcset="hero-image.webp" type="image/webp" alt="">
+            <source srcset="hero-image.png" type="image/jpeg" alt="">
+            <img src="hero-image.png" alt="">
+          </picture>
         </VCol>
       </VRow>
     </VGrid>
