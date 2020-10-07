@@ -1,4 +1,11 @@
 .page-head {
+  position: relative;
+  picture {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   &__content {
     min-height: 70vh;
   }
